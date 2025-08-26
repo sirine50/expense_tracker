@@ -36,7 +36,7 @@ def main():
 
         if choice == 1:
             try:
-                amount = float(input("Please enter the amount: "))
+                amount = float(input("Please enter the amount{In your currency}: "))
                 category = input("Please enter what category: ").lower().title()
                 date = input("Please enter the date forme(year-month-day): ")
                 if valid_date_pattern(date):
@@ -108,4 +108,5 @@ def main():
 
             break         
 if __name__ == "__main__":
+
     main()
